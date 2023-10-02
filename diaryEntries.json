@@ -1,0 +1,113 @@
+data = [
+  {
+      "data" : "13/07/21",
+      "titolo" : "Aggiornamento riguardante questo portfolio",
+      "testo" : "per rendere tutto il più modulare, ho messo ogni scritto di questo diario in un file json, " +
+        "inizialmente volevo utilizzare vue.js per leggere il file, ma credo che avrei dovuto utilizzare le chiamate ajax (che ancora non ho studiato) " +
+        "ma ho risolto con del semplice javascript, anche perchè non voglio fare la fine di chi utilizza 1000 framework js e poi fa siti pesanti"
+  },
+  {
+      "data" : "05/06/21",
+      "titolo" : "Aggiornamento riguardante i miei blog",
+      "testo" : "sto cercando di capire se c'è un modo per evitare di utilizzare un DB per gli articoli, " +
+        "aggiungerli manualmente qui, al momento non è un problema, non credo che 4 righe di testo influiscano " +
+        "così pesantemente sul browser, in più gli aggiornamento non sono così frequenti o molti, " +
+        "magari più avanti potrei fare un archivio storico, ma per ora non ne ho bisogno " +
+        "facendo delle ricerche ho intuito che potrei utilizzare i cookie, ma in tal maniera come sarei combinato col gdpr? " +
+        "non ne ho idea, non essendo di profilazione non dovrei avere problemi, ho scelto di hostarli su altervista " +
+        "male che vada metto su un db su mySQL, ma per ora preferisco lasciare perdere, è tempo di esami all'università"
+  },
+  {
+        "data" : "18/05/21",
+        "titolo" : "Aggiornamento riguardante questo portfolio",
+        "testo" : "lo swiper con cui ho fatto questa pagina mi ha dato un po' di grattacapi, " +
+          "fortunatamente sono riuscito a risolvere, non andando su stack overflow, " +
+          "ma bensi andando a cercare le issues note nel repository github, " +
+          "lo swiper non va inizializzato mentre è in uno stato di display: none, " +
+          "per questo ho implementato un mutationObserver che mi aggiorni lo swiper " +
+          "ad ogni cambio di valore di display."
+  },
+  {
+        "data" : "07/05/21",
+        "titolo" : "Aggiornamento riguardante la coding week",
+        "testo" : "Ho seguito la coding week di boolean, le prime lezioni non erano nulla di che, " +
+          "cose che già conoscevo, dopo la terza lezione abbiamo iniziato una panoramica su vue.Js e Axyos, " +
+          "2 argomenti che sono stati trattati in maniera poco approfondita, sicuramente approfondirò per conto mio"
+  },
+  {
+        "data" : "27/04/21",
+        "titolo" : "Aggiornamento riguardante A Gamer's Metallutopia",
+        "testo" : "Ho completato la struttura e la parte estetica del mio blog, mi preoccupa la gestione degli articoli " +
+          "non posso mica modificare il file index ogni volta che faccio un articolo, in più sto iniziando a pensare " +
+          "che non sia una buona idea parlare di 2 argomenti distinti in un blog, forse mi conviene sdoppiarlo, " +
+          "con questa scusante posso imparare un framework css che non sia pureCSS, vada per Bulma."
+  },
+  {
+        "data" : "24/04/21",
+        "titolo" : "Aggiornamento riguardante questo portfolio",
+        "testo" : "Mi piace un sacco animare con AnimeJs, tuttavia anche qui ho dovuto escogitare degli escamotage, " +
+          "per cosa? le animazioni create con AnimeJs non fermano l'esecuzione del codice in alcun modo, quindi si verificano " +
+          "fenomeni di sovrapposizione, ho risolto utilizzando la funzione setTimeout di Js, nonostante comprometta " +
+          "la leggibilità del codice, nel mentre ho scoperto che Boolean farà una free coding week, penso che parteciperò"
+  },
+  {
+        "data" : "20/04/21",
+        "titolo" : "Aggiornamento riguardante questo portfolio",
+        "testo" : "volevo utilizzare dei framework CSS, ho provato PureCSS, non mi piace " +
+          "mancando di senso estetico, penso che terrò tutto il più semplice possibile, " +
+          "in compenso penso che userò animeJS per animare il tutto"
+  },
+  {
+        "data" : "17/04/21",
+        "titolo" : "Aggiornamento riguardante A Gamer's Metallutopia",
+        "testo" : "ho utilizzato font-face, i problemi non sono mancati, ho dovuto avviare xampp per farlo funzionare " +
+          "adesso voglio fare un portfolio, ho dato un'occhiata su W3Schools per le animazioni in CSS, sembrano facili ..."
+  },
+  {
+        "data" : "16/04/21",
+        "titolo" : "Aggiornamento riguardante A Gamer's Metallutopia",
+        "testo" : "Mi sono reso conto che non ho la sensibilità per fare dei deisgn moderni, " +
+          "ho iniziato a guardare il blog con sdegno, troppo anni 2000, " +
+          "tanto vale farlo pacchiano di proposito magari " +
+          "a tema Retrowave e con un font simile a quello delle console 8bit " +
+          "passerò la giornata a modificare i modelli su blender"
+  },
+  {
+        "data" : "15/04/21",
+        "titolo" : "Aggiornamento riguardante A Gamer's Metallutopia",
+        "testo" : "la home è pronta, ho utilizzato il float unito al responsive per il layout, " +
+          "la barra di navigazione contiene sia del testo che delle icone (prese da Freepik) e " +
+          "il testo scompare sui dispositivi con schermo più piccolo di 768px"
+  },
+  {
+        "data" : "12/04/21",
+        "titolo" : "Aggiornamento riguardante A Gamer's Metallutopia",
+        "testo" : "ho preso una decisione, ricostruire da zero il mio blog dell'epoca di MSN, " +
+          "ho avuto qualche problema a centrare un elemento al centro di un div, " +
+          "fortunatamente adesso so che mi basta impostare nel CSS width ed height al 50% e il margin in auto. " +
+          "inizio a modellare su blender uno sfondo per il sito ..."
+  },
+  {
+        "data" : "10/04/21",
+        "titolo" : "Aggiornamento riguardante le mie competenze",
+        "testo" : "ho imparato ad usare grid e flexbox tramite degli esercizi per creare un card layout, " +
+        "adesso so anche scrivere 2 righe per rendere il design responsivo "
+  },
+  {
+        "data" : "05/04/21",
+        "titolo" : "aggiornamento riguardante le mie competenze",
+        "testo" : "ho visto un altro corso sulla manipolazione del DOM, interessante " +
+        "ma non riesco ancora ad fare delle pagine web che mi garbino, " +
+        "inizierò sicuramente nei prossimi giorni a guardare meglio un po' di CSS, " +
+        "fortunatamente ho proprio un corso a riguardo"
+  },
+  {
+        "data" : "02/04/21",
+        "titolo" : "L'inizio",
+        "testo" : "Ha da molto che non programmo " +
+          "fortunatamente avevo dei corsi su Zenva che mi aspettavano, " +
+          "ottimi per riprendere la mano con i linguaggi che non tocco dalle superiori, " +
+          "ho appena concluso Javascript Foundations ed è stato" +
+          "molto interessante, continuerò ad approfondire."
+  }
+];

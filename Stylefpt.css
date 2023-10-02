@@ -1,0 +1,336 @@
+/* === === === GENERICI === === === */
+body{
+    background-color: dodgerblue;
+    color: white;
+    height: 100%;
+    padding:3%;
+}
+
+.selfContainedText, .pageTitle{
+    text-align: center;
+    font-weight: bold;
+}
+
+.selfContainedText{
+   border: 2px solid white;
+   border-radius: 40px;
+   font-size: 180%;
+}
+
+img{
+   width: 100%;
+   margin: auto;
+}
+
+.me{
+  border-radius: 50%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+
+.footergrid{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+
+}
+
+.element{
+   border: 2px solid white;
+   border-radius: 40px;
+   margin: 1%;
+   padding: 0.5%;
+   max-width: 700px;
+}
+
+/* === === === */
+
+
+/* === === === BOTTONI e MENU === === === */
+#menu-visibility{
+    display:none;
+}
+
+#menu{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    position:fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    text-align:center;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 33px;
+    z-index: 1;
+}
+
+.option{
+    margin: 5%;
+    position: relative;
+}
+
+.option p{
+    position:absolute;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s ease-out;
+}
+
+.option p:hover{
+    background-color: dodgerblue;
+    border-radius: 40px;
+}
+
+@keyframes pulse {
+  0%    {transform: scale(1);}
+  50%   {transform: scale(1.1);}
+  100%  {transform: scale(1);}
+}
+
+.option:hover{
+    animation-name: pulse;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+/* === === === */
+
+
+/* === === === HAMBURGER ICON === === ===*/
+#hamburger-icon{
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    background-color: dodgerblue;
+}
+
+.icon{
+    display: none;
+    padding-left: 5%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 30px;
+    filter: invert(1);
+    z-index: 2;
+    transition: 0.5s ease-out;
+}
+
+.icon:hover{
+    animation-name: pulse;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+/* === === === */
+
+
+/* === === === SEZIONI SEMPLICI === === === */
+#main{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+}
+
+#presentation{
+  display: inline-block;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 380%;
+}
+/* === === === */
+
+
+/* === === === SEZIONE PROGETTI=== === === */
+#projectList{
+  display: none;
+}
+
+#projectList h1{
+  text-align: center;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.element{
+    height: 220px;
+    width: 300px;
+    padding: 1%;
+    margin: 2%;
+}
+
+.element a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.element a div{
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.element a p{
+  text-align: center;
+}
+/* === === ===*/
+
+
+/* === === === SEZIONE I MIEI CONTATTI === === === */
+#myContact{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contactGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin-bottom: 3%;
+}
+
+.elementGrid{
+  margin: 2%;
+}
+
+.elementGrid a img{
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+/* === === === */
+
+
+/* === === === SEZIONE DIARIO === === === */
+#myDiary{
+  display: none;
+  background-color: white;
+  color: black;
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+  background-position: -0.5%; /*centramento dello sfondo*/
+  margin-top: 2%;
+  width: 100%;
+  height: 75vh;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1%;
+}
+
+.swiper-slide fieldset{
+    width: 90%;
+    height: 90%;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.slide-spacing{
+    line-height: 1.5;
+}
+
+.swiper-slide fieldset legend{
+    border-radius: 40px;
+}
+
+
+
+/* === === === */
+
+
+/* === === === RESPONSIVE === === === */
+@media screen and (min-width: 768px){
+
+    /*Aggiustamento grandezza della home*/
+     #main{
+          width: 60%;
+    }
+
+    /* Dimensione massima che un'immagine nella sezione progetti può assumere */
+    .element{
+        max-width: 250px;
+    }
+
+    /*Aggiustamento grandezza della sezione Diario*/
+    #myDiary{
+        height: 70vh;
+    }
+
+    /* Ricostruzione della griglia nella sezione I miei contatti in modo da occupare una superficie maggiore */
+    .contactGrid{
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 1;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    /* Larghezza massima della home */
+    #main{
+          width: 45%;
+    }
+
+    /**/
+    .option p{
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+}
+/* === === === */
