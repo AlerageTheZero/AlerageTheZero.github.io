@@ -178,9 +178,19 @@ footer{
   justify-content: space-evenly;
 }
 
+.tag-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: -15%;
+}
+
 .element{
-    height: 220px;
-    width: 300px;
+    min-height: 250px;
+    min-width: 150px;
+    max-height: 350px;
+    max-width: 250px;
     padding: 1%;
     margin: 2%;
 }
@@ -191,22 +201,46 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  weight: 90%;
   height: 100%;
 }
 
 .element a div{
-  width: 50%;
-  height: 50%;
-  margin-left: 25%;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.element a p{
+.element a div h3{
   text-align: center;
 }
+
+.element a div h5{
+  text-align: center;
+  margin-top: -5%;
+}
+
+.element a div img{
+  max-width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: -5%;
+}
+
+.element a div p{
+  text-align: center;
+  margin-top: -5%;
+}
+
+/* .projectlogo{
+  width: 100px;
+  height: 100px;
+} */
 /* === === ===*/
 
 
@@ -240,19 +274,15 @@ footer{
 /* === === === */
 
 
-/* === === === SEZIONE DIARIO === === === */
-#myDiary{
+/* === === === SEZIONE ESPERIENZE LAVORATIVE === === === */
+#myWorkExperince{
   display: none;
   background-color: white;
   color: black;
-  background-size: 40px 40px;
-  background-image:
-    linear-gradient(to right, grey 1px, transparent 1px),
-    linear-gradient(to bottom, grey 1px, transparent 1px);
-  background-position: -0.5%; /*centramento dello sfondo*/
   margin-top: 2%;
   width: 100%;
   height: 75vh;
+  overflow: hidden;
 }
 
 .swiper-container {
@@ -266,36 +296,67 @@ footer{
     text-align: center;
     font-size: 18px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: -1%;
-}
-
-.swiper-slide fieldset{
-    width: 90%;
-    height: 90%;
-    border: 2px solid black;
-    border-radius: 40px;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, grey 1px, transparent 1px),
+      linear-gradient(to bottom, grey 1px, transparent 1px);
+    background-position: -0.5%; /*centramento dello sfondo*/
+    overflow: hidden;
 }
 
 .slide-spacing{
     line-height: 1.5;
 }
 
-.swiper-slide fieldset legend{
-    border-radius: 40px;
+.badge {
+  background-color: blue;
+  color: white;
+  padding: 5%;
+  text-align: center;
+  border-radius: 5px;
+  margin: 2%;
+  font-size: 10px;
 }
 
+.joblogo{
+  width: 50px;
+  height: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  grid-template-rows: 33% 33% 33%;
+  grid-column-gap: 0.33%;
+  grid-row-gap: 0;
+  justify-content: space-evenly;
+  margin-top: -10%;
+}
 
 
 /* === === === */
 
 
 /* === === === RESPONSIVE === === === */
+
+@media screen and (min-width: 480px){
+  .grid-container {
+    margin-top: -5%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 720px) and (max-height: 1281px) and (max-height: 721px){
+  .grid-container {
+    grid-template-columns: 15% 15% 15% 15% 15% 15% 10%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15% 10%;
+    margin-top:0;
+  }
+}
+
 @media screen and (min-width: 768px){
 
     /*Aggiustamento grandezza della home*/
@@ -309,14 +370,33 @@ footer{
     }
 
     /*Aggiustamento grandezza della sezione Diario*/
-    #myDiary{
+    #myWorkExperince{
         height: 70vh;
+    }
+
+    .joblogo{
+      width: 80px;
+      height: 80px;
     }
 
     /* Ricostruzione della griglia nella sezione I miei contatti in modo da occupare una superficie maggiore */
     .contactGrid{
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 1;
+    }
+
+    .tag-list .badge{
+      font-size: small;
+    }
+
+    .badge {
+      font-size: medium;
+    }
+
+    .grid-container {
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 25% 25% 25% 25%;
+      margin-top:0;
     }
 }
 
@@ -331,6 +411,18 @@ footer{
     .option p{
       padding-top: 1%;
       padding-bottom: 1%;
+    }
+
+    .joblogo{
+      width: 100px;
+      height: 100px;
+    }
+
+    .grid-container {
+      grid-template-columns: 15% 12% 12% 12% 12% 12% 12% 12%;
+      grid-template-rows: 50% 50%;
+      row-gap: 1%;
+      margin-top:-1%;
     }
 }
 /* === === === */
